@@ -1,0 +1,1 @@
+web: gunicron insta.wsgi --log-file -
