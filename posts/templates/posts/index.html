@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load bootstrap_pagination %}
+{% block body %}
+  {% for post in posts %}
+    {% include 'posts/_post.html' %}
+  {% endfor %}
+  {% bootstrap_paginate posts %}
+  
+{% endblock %}

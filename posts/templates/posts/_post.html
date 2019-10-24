@@ -1,0 +1,9 @@
+{% load make_link %}
+<div class="card col-6">
+  <img src="{{post.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{post|hashtag_link|safe}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
